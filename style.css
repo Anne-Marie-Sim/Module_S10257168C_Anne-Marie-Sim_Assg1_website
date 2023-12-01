@@ -4,20 +4,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Leckerli+One&family=Vesper+Libre:wght@400;700&display=swap" rel="stylesheet">
 
 
-.top h1{
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Playfair Display', serif;
-        font-size:30px;
-    }
+.title{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
 
 .top{
     background: radial-gradient(circle at center, #D3BDCA, #c3c9d7);
     justify-content: center;
-        align-items: center;
-        width: 100%;
+    align-items: center;
+    width: 100%;
+    top:0px;
 }
 
 .linkbar{
@@ -76,18 +77,19 @@
 }
 
 .preview h5{
-    position: absolute;
+    position: relative;
     top: 90px;
     left: 300px;
     font-family: 'Bree Serif', serif;
     color: yellow;
+    height:30px;
     font-size: 40px;
     font-style:italic;
 }
 
 .preview button{
     position: absolute;
-    top: 230px;
+    top: 220px;
     left: 320px;
     background-color: #D3BDCA;
     outline: none;
@@ -96,11 +98,12 @@
     font-family: 'Bree Serif', serif;
 }
 
-.stream{
-    position: absolute;
-    top: 120px;
-    left: 350px;
-    font-family: 'Bree Serif', serif;
+
+.toggleimg{
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    margin: 20px 0;
 }
 
 /*for no underline at links*/
@@ -175,10 +178,37 @@ a{
 }
 
 /*tour page*/
+
+
 .tour h3{
     font-family: 'Leckerli One', cursive;
-    color: rgb(208, 163, 241);
+    color: rgb(241, 225, 163);
     font-size: 30px;
+}
+
+.tour h4{
+    color: rgb(204, 155, 240);
+    padding-right: 90px;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.tour h6{
+    color: rgb(204, 155, 240);
+    text-align: center;
+}
+
+.tour button{
+    margin: 60px;
+    background-color: rgb(241, 225, 163);
+    border: none;
+    border-radius: 5px;
+}
+
+.tour hr{
+    position: absolute;
+    width: 100%;
+    height: 2px;
 }
 
 .date1{
@@ -190,33 +220,15 @@ a{
     align-items: center;
 }
 
-.tour h4{
-    /*padding-left: 20px;*/
-    font-size: 30px;
-    margin: 10px;
-}
-
-.tour h6{
-    text-align: center;
-    width: 30px;
-}
-
-.tour button{
-    width:150px;
-    height:50px;
-    font-size: 60px;
-    margin-right: 10px;
-}
-
 .date2{
     /*display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
     display: flex;
     justify-content: space-between;
-    align-items: center;*/
-    display: inline-block;
+    align-items: center;
 }
+
 .date3{
     /*display: flex;
     align-items: center;
@@ -225,6 +237,7 @@ a{
     justify-content: space-between;
     align-items: center;
 }
+
 .date4{
     /*display: flex;
     align-items: center;
@@ -233,6 +246,7 @@ a{
     justify-content: space-between;
     align-items: center;
 }
+
 .date5{
     /*display: flex;
     align-items: center;
@@ -240,4 +254,78 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.tour{
+    /*background-color: #415782;*/
+    position: relative;
+    height: fit-content;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://i.pinimg.com/564x/58/b8/8e/58b88e41d5b5e54710a2e0b7ef8d93de.jpg");
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+    background-size:cover;
+    background-attachment: fixed;
+    margin-top: 0px;
+}
+
+
+/*newletter*/
+.newsletter body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #415782;
+}
+
+.newsl {
+    background-color: #415782;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /*max-width: 500px;*/
+    /*width: 100%;*/
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.forms input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.forms button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    
+}
+
+.imagepage{
+    background-color: #415782;
+}
+.imagepage h2{
+    font-family: 'Leckerli One', cursive;
+    color: rgb(176, 150, 242);
+    font-size: 30px;
 }
