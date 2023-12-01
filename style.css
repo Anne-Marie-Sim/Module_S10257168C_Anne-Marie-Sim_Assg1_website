@@ -1,7 +1,243 @@
-.top
-{
-    h1{
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Leckerli+One&family=Vesper+Libre:wght@400;700&display=swap" rel="stylesheet">
+
+
+.top h1{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-family: 'Playfair Display', serif;
-        font-size:20px
+        font-size:30px;
     }
+
+.top{
+    background: radial-gradient(circle at center, #D3BDCA, #c3c9d7);
+    justify-content: center;
+        align-items: center;
+        width: 100%;
+}
+
+.linkbar{
+    display: flex;
+    justify-content: space-between; 
+    
+}
+.pages{
+    margin-left: auto;
+    font-family: 'PT Serif', serif;
+    display:flex; 
+    justify-content: flex-start;
+    align-items: center; 
+    /*margin-left: auto; 
+    padding-right: 20px; */
+    margin: 0;
+    padding: 0;
+
+}
+.pages > * {
+    margin-left: 20px;
+}
+.pages a{
+    font-family: 'Leckerli One', cursive;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.sociallinks > * {
+    margin-right: 10px;
+}
+
+
+/*home page*/
+.preview {
+    position:relative;
+    height: 350px;
+    display: flex;
+    align-items: centre;
+    background-image: url("https://i.pinimg.com/564x/58/b8/8e/58b88e41d5b5e54710a2e0b7ef8d93de.jpg");
+    background-position: centre;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.niteswimposter{
+    position: absolute;
+    top: 55px;
+    left: 30px;
+}
+
+.preview h5{
+    position: absolute;
+    top: 90px;
+    left: 300px;
+    font-family: 'Bree Serif', serif;
+    color: yellow;
+    font-size: 40px;
+    font-style:italic;
+}
+
+.preview button{
+    position: absolute;
+    top: 230px;
+    left: 320px;
+    background-color: #D3BDCA;
+    outline: none;
+    padding: 10px 20px; border: none ;
+    border-radius: 10px;
+    font-family: 'Bree Serif', serif;
+}
+
+.stream{
+    position: absolute;
+    top: 120px;
+    left: 350px;
+    font-family: 'Bree Serif', serif;
+}
+
+/*for no underline at links*/
+a{
+    text-decoration: none;
+}
+.link-without-underline {
+    text-decoration: none;
+}
+
+
+/*about page*/
+
+.about h3{
+    font-family: 'Leckerli One', cursive;
+    color: rgb(241, 225, 163);
+    font-size: 30px;
+}
+.aboutp1 {
+    text-align: center;
+    font-family: 'Vesper Libre', serif;
+    color: rgb(241, 225, 163);
+}
+
+.aboutp2 {
+    text-align: center;
+    font-family: 'Vesper Libre', serif;
+    color: rgb(241, 225, 163);
+}
+
+.mad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mad_desc{
+    text-align: center;
+    padding: 50px;
+    color: rgb(241, 225, 163);
+}
+
+.lil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lil_desc{
+    text-align: center;
+    padding: 50px;
+    color: rgb(241, 225, 163);
+}
+
+.aboutp3{
+    text-align: center;
+    color: rgb(241, 225, 163);
+}
+
+.about{
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://i.pinimg.com/564x/58/b8/8e/58b88e41d5b5e54710a2e0b7ef8d93de.jpg");
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+    background-size:cover;
+    background-attachment: fixed;
+    margin-top: 0px;
+}
+
+/*tour page*/
+.tour h3{
+    font-family: 'Leckerli One', cursive;
+    color: rgb(208, 163, 241);
+    font-size: 30px;
+}
+
+.date1{
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tour h4{
+    /*padding-left: 20px;*/
+    font-size: 30px;
+    margin: 10px;
+}
+
+.tour h6{
+    text-align: center;
+    width: 30px;
+}
+
+.tour button{
+    width:150px;
+    height:50px;
+    font-size: 60px;
+    margin-right: 10px;
+}
+
+.date2{
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+    display: inline-block;
+}
+.date3{
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.date4{
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.date5{
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
